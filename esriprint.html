@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
+    <title>Print Crop Maps</title>
+    <link rel="stylesheet" href="https://js.arcgis.com/3.17/dijit/themes/tundra/tundra.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/3.17/dijit/themes/nihilo/nihilo.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/3.17/esri/css/esri.css">
+    <style src = "./esriprint.css">
+      
+    </style>
+
+    <script src="https://js.arcgis.com/3.17/"></script>
+    <script src = "./esriprint.js"></script>
+  </head>
+
+  <body class="nihilo">
+    <div id="mainWindow"
+         data-dojo-type="dijit.layout.BorderContainer"
+         data-dojo-props="design:'headline',gutters:false"
+         style="width: 100%; height: 100%; margin: 0;">
+      <div id="header"
+           data-dojo-type="dijit.layout.ContentPane"
+           data-dojo-props="region:'top'">
+        Crop Map Printing Center
+        <div id="subheader">for employees only</div>
+        <div id="printbtn-wrapper">
+        <div id="print_button"></div></div>
+        <div id="bookmarks-wrapper">
+          <div data-dojo-type="dijit.form.DropDownButton">
+            <span>Areas</span>
+            <div data-dojo-type="dijit.TooltipDialog">
+              <div id="bookmarks"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="rightPane"
+           data-dojo-type="dijit/layout/ContentPane"
+           data-dojo-props="region:'right'">
+
+        <div data-dojo-type="dijit/layout/AccordionContainer">
+          <div data-dojo-type="dijit/layout/ContentPane" id="togglePane"
+               data-dojo-props="title:'Crops', selected:true">
+
+            <span style="padding:10px 0; font-size:20px; font-family:arial; font-weight:bold;">Click on boxes to turn the crops off and on.</span>
+
+            <div id="toggle" style="padding: 6px 6px;"></div>
+
+          </div>
+          <div data-dojo-type="dijit/layout/ContentPane" id="legendPane"
+               data-dojo-props="title:'Legend'">
+
+            <div id="legendDiv"></div>
+
+          </div>
+
+
+        </div>
+      </div>
+      <div id="map"
+           data-dojo-type="dijit/layout/ContentPane"
+           data-dojo-props="region:'center'">
+
+
+          </div>
+
+        </div>
+        <div id="ds">
+          <div id="ds-h">
+            <div class="ds h1 o1"></div>
+            <div class="ds h2 o2"></div>
+            <div class="ds h3 o3"></div>
+            <div class="ds h4 o4"></div>
+            <div class="ds h5 o5"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

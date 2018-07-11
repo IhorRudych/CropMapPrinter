@@ -1,0 +1,84 @@
+html, body { height: 100%; width: 100%; margin: 0; padding: 0; }
+      h3 { margin: 0 0 5px 0; border-bottom: 1px solid #444; padding: 0 0 5px 0; text-align: center; }
+      .shadow {
+        -moz-box-shadow: 0 0 5px #888;
+        -webkit-box-shadow: 0 0 5px #888;
+        box-shadow: 0 0 5px #888;
+      }  #header {
+          padding-top: 4px;
+          padding-left: 15px;
+          background-color:#154;
+          color:#fff;
+          font-size:16pt;
+          text-align: left;
+          font-weight:bold;
+          height:55px;
+        }
+        #subheader {
+          font-size:small;
+          color: #cfcfcf;
+          text-align:left;
+        }
+        #printbtn-wrapper {
+          position: absolute;
+          z-index: 20;
+          top: 9px;
+          right: 50px;
+          background: transparent;
+          font-size: 12pt;
+          color: #444;
+        }
+        #bookmarks-wrapper {
+          position: absolute;
+          z-index: 40;
+          top: 15px;
+          right: 230px;
+          background: transparent;
+          font-size: 12pt;
+          color: #444;
+        }
+      #map{ margin: 0; padding: 0; }
+      #feedback {
+        background: #fff;
+        color: #000;
+        position: absolute;
+        font-family: arial;
+        height: auto;
+        right: 20px;
+        margin: 5px;
+        padding: 10px;
+        top: 20px;
+        width: 300px;
+        z-index: 40;
+      }
+      #feedback a {
+        border-bottom: 1px solid #888;
+        color: #444;
+        text-decoration: none;
+      }
+      #feedback a:hover, #feedback a:active, #feedback a:visited {
+        border: none;
+        color: #444;
+        text-decoration: none;
+      }
+      #rightPane {
+          width: 15%;
+        }
+      #legendPane {
+          border: solid #97DCF2 1px;
+        }
+      #note { font-size: 80%; font-weight: 700; padding: 0 0 10px 0; }
+      #info { padding: 10px 0 0 0; }
+      .ds { background: #000; overflow: hidden; position: absolute; z-index: 2; }
+      #ds-h div { width: 100%; }
+      #ds-l div { height: 100%; }
+      #ds .o1 { filter: alpha(opacity=10); opacity: .1; }
+      #ds .o2 { filter: alpha(opacity=8); opacity: .08; }
+      #ds .o3 { filter: alpha(opacity=6); opacity: .06; }
+      #ds .o4 { filter: alpha(opacity=4); opacity: .04; }
+      #ds .o5 { filter: alpha(opacity=2); opacity: .02; }
+      #ds .h1 { height: 1px; }
+      #ds .h2 { height: 2px; }
+      #ds .h3 { height: 3px; }
+      #ds .h4 { height: 4px; }
+      #ds .h5 { height: 5px; }
